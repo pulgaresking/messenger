@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+        flex: 1;
+        border: 1px solid #fff;
+    }
+    .middle {
+        flex: 2;
+        border: 1px solid #fff;
+    }
+    .right {
+        flex: 1;
+        border: 1px solid #fff;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
