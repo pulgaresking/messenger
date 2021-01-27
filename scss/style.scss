@@ -2,37 +2,79 @@
 @import "utilities";
 
 body {
-    background: $primary-color;
-    color: text-color($primary-color);
+  @include set-color($primary-color);
 }
 
 .left {
-    .menu {
-        display: flex;
-        justify-content: space-between;
+  .menu {
+    display: flex;
+    justify-content: space-between;
 
-        .left-menu {
-            display: flex;
-            align-items: center;
-            p {
-                margin-right: 10px;
-            }
-        }
-
-        .right-menu {
-            display: flex;
-            align-items: center;
-            
-            p {
-                background: lighten($primary-color, 10%);
-                border-radius: 50%;
-                padding: 7px;
-                margin: 5px;
-                cursor: pointer;
-            }
-            p:hover {
-                background: lighten($primary-color, 20%);
-            }
-        }
+    .left-menu {
+      display: flex;
+      align-items: center;
+      p {
+        margin-right: 10px;
+      }
     }
+
+    .right-menu {
+      display: flex;
+      align-items: center;
+
+      p {
+        background: lighten($primary-color, 10%);
+        border-radius: 50%;
+        padding: 7px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      p:hover {
+        background: lighten($primary-color, 20%);
+      }
+    }
+  }
+  .search-bar {
+    position: relative;
+    padding: 20px 0px;
+
+    .fa-search {
+      position: absolute;
+      @include set-color(lighten($primary-color, 10%));
+      left: 2%;
+      top: 38%;
+    }
+
+    .search-people {
+      width: 100%;
+      border-radius: 20px;
+      border: none;
+      height: 30px;
+      padding-left: 25px;
+      font-size: 14px;
+      @include set-color(lighten($primary-color, 10%));
+    }
+  }
+
+  .chat-box {
+      height: 500px;
+      overflow: auto;
+    .chat {
+        display: flex;
+        cursor: pointer;
+        padding: 15px;
+        
+    
+        &-text {
+          margin-left: 10px;
+        }
+      }
+
+      .chat:hover {
+        @include set-color(lighten($primary-color, 10%));
+      }
+  }
+  
+
+  
 }

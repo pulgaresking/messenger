@@ -12,7 +12,6 @@ body {
 
 body .left {
   flex: 1;
-  border: 1px solid #fff;
 }
 
 body .middle {
@@ -64,4 +63,48 @@ body {
 
 .left .menu .right-menu p:hover {
   background: #4b5058;
+}
+
+.left .search-bar {
+  position: relative;
+  padding: 20px 0px;
+}
+
+.left .search-bar .fa-search {
+  position: absolute;
+  background: #33373d;
+  color: #fff;
+  left: 2%;
+  top: 38%;
+}
+
+.left .search-bar .search-people {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  height: 30px;
+  padding-left: 25px;
+  font-size: 14px;
+  background: #33373d;
+  color: #fff;
+}
+
+.left .chat-box {
+  height: 500px;
+  overflow: auto;
+}
+
+.left .chat-box .chat {
+  display: flex;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.left .chat-box .chat-text {
+  margin-left: 10px;
+}
+
+.left .chat-box .chat:hover {
+  background: #33373d;
+  color: #fff;
 }

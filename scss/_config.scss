@@ -1,12 +1,18 @@
 $primary-color: #1c1e21;
-$secondary-color: darken($primary-color, 10%);
 
 // change the text color depend on bg
 
 @function text-color($color) {
-    @if (lightness($color) > 70) {
-        @return #333;
-    } @else {
-        @return #fff;
-    }
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// set color for bg and text
+
+@mixin set-color($color) {
+  background: $color;
+  color: text-color($color);
 }
