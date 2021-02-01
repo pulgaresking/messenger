@@ -6,7 +6,6 @@
 
 body {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -105,6 +104,59 @@ body {
 }
 
 .left .chat-box .chat:hover {
+  background: #33373d;
+  color: #fff;
+}
+
+.middle {
+  height: 350px;
+}
+
+.middle-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+}
+
+.middle-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.middle-header-left h2 {
+  padding-left: 10px;
+}
+
+.middle-header-right i {
+  padding: 7px;
+  cursor: pointer;
+}
+
+.middle-bottom {
+  margin: 240px 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.middle-bottom .fa-smile {
+  position: absolute;
+  right: 5%;
+}
+
+.middle-bottom i {
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.middle-bottom input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
   background: #33373d;
   color: #fff;
 }
