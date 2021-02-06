@@ -131,3 +131,47 @@ body {
     }
   }
 }
+
+.right {
+  
+  &-header {
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+    h3 {
+      margin-top: 10px;
+    }
+  }
+
+  &-tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+  }
+  &-tab:hover {
+    @include set-color(lighten($primary-color, 10%));
+  }
+
+  &-tab-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 15px;
+    cursor: pointer;
+
+    &-title {
+      display: flex;
+      align-items: center;
+
+      h4 {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &-tab-list:hover {
+    @include set-color(lighten($primary-color, 10%));
+  } 
+}

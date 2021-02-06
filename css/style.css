@@ -160,3 +160,47 @@ body {
   background: #33373d;
   color: #fff;
 }
+
+.right-header {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.right-header h3 {
+  margin-top: 10px;
+}
+
+.right-tab {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.right-tab:hover {
+  background: #33373d;
+  color: #fff;
+}
+
+.right-tab-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+.right-tab-list-title {
+  display: flex;
+  align-items: center;
+}
+
+.right-tab-list-title h4 {
+  padding-left: 10px;
+}
+
+.right-tab-list:hover {
+  background: #33373d;
+  color: #fff;
+}
